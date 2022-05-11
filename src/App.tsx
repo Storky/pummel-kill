@@ -7,11 +7,10 @@ import Grid from '@mui/material/Grid';
 import SearchAppBar from 'components/AppBar';
 import cities from 'data.json';
 import Typography from '@mui/material/Typography';
-import {CommentForm} from './components/forms/comment-form';
 import MyLink from './components/my-link';
 
 
-import getNumbersTo1Dmg from 'utils/pummel'
+import getNumbersTo1Dmg from 'engine/pummel'
 
 
 function App() {
@@ -26,13 +25,6 @@ function App() {
 
         <SearchAppBar/>
         <Container maxWidth="lg" sx={{marginY: 5}}>
-
-
-            <br/>
-            <MyLink/>
-            <br/>
-            <CommentForm/>
-
             {/*https://www.youtube.com/watch?v=o1chMISeTC0*/}
 
         </Container>
