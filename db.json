@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "title": "mojoi",
+      "body": "mojoi",
+      "id": 18
+    },
+    {
+      "title": "2323",
+      "body": "33333",
+      "id": 20
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

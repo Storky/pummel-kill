@@ -19,8 +19,8 @@ const LS_DMG: number[] = [
 
 function getNumbersTo1Dmg(): number[] {
     const lsDmgRests: number[] = LS_DMG.map((dmg)=> 100 - 1 -dmg);
-
-    console.log(123,data);
+    // todo uncomment
+    // console.log(123,data);
 
 
     const onlyDuelWeapons: TMeleeWeaponItem[] = allWeapons.filter(
@@ -55,8 +55,9 @@ function getNumbersTo1Dmg(): number[] {
         } : null;
     }).filter(w => !!w);
 
-    console.log(111, weaponsPummelDamages);
-    console.log('onlyDuelWeapons', onlyDuelWeapons);
+    // todo uncomment
+    // console.log(111, weaponsPummelDamages);
+    // console.log('onlyDuelWeapons', onlyDuelWeapons);
 
     return LS_DMG.map((dmg)=> 100 - 1 -dmg);
 }
