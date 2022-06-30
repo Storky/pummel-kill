@@ -7,7 +7,7 @@ import SearchAppBar from 'components/AppBar';
 import getNumbersTo1Dmg from 'engine/pummel'
 import {userSlice} from 'store/reducers/UserSlice';
 import {useAppDispatch, useAppSelector} from 'utils/hooks/redux';
-import {fetchUsers} from 'store/reducers/ActionCreators';
+import {fetchUsers, fetchWeapons} from 'store/reducers/ActionCreators';
 import {postAPI} from 'services/PostService';
 
 function App() {
@@ -19,6 +19,10 @@ function App() {
 
     React.useEffect(()=>{
         dispatch(fetchUsers());
+    }, []);
+
+    React.useEffect(()=>{
+        dispatch(fetchWeapons());
     }, []);
 
     React.useEffect(()=>{

@@ -17,3 +17,7 @@ export const setupStore = () => {
 export type RootState = ReturnType<typeof rootReducer>
 export type AppStore = ReturnType<typeof setupStore>
 export type AppDispatch = AppStore['dispatch']
+
+
+// plug in redux saga https://codesandbox.io/s/mfetp?file=/src/store.js
+// https://www.youtube.com/watch?v=9MMSRn5NoFY

@@ -3,6 +3,7 @@ import axios, {AxiosError} from 'axios';
 import {IUser} from 'models/IUser';
 import {userSlice} from "./UserSlice"
 import {createAsyncThunk} from '@reduxjs/toolkit';
+import mordstatsData from 'engine/data/mordstats.json';
 
 // export const fetchUsers = () => async (dispatch: AppDispatch) => {
 //     try {
@@ -24,8 +25,16 @@ export const fetchUsers = createAsyncThunk(
         } catch (e) {
             return thunkAPI.rejectWithValue('fail')
         }
-
     }
 );
 
-
+export const fetchWeapons = createAsyncThunk(
+    'weapons/fetch',
+    async (_, thunkAPI) => {
+        try {
+            return mordstatsData;
+        } catch (e) {
+            return thunkAPI.rejectWithValue('Failed to load mordstats data')
+        }
+    }
+);

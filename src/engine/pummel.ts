@@ -1,6 +1,6 @@
 
 import data from 'engine/data/mordstats.json';
-import { TMeleeWeaponItem, TMeleeAttack} from 'engine/data/mordstats-data.types';
+import { TMeleeWeaponItem, TMeleeAttack} from 'models/mordstats-data.types';
 import {filteredAttacksMapper, wDamageFilter} from 'engine/pummel/pummel.mappers';
 import {allWeapons} from 'engine/data/mordstats-data.helpers';
 
